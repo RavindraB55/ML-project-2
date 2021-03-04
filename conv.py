@@ -1,6 +1,8 @@
+# This code is used to convolve wav files to produce the final product
 import numpy as np
 from wave import open
 import soundfile
+np.seterr(divide='ignore', invalid='ignore')
 
 class Wave:
     def __init__(self, data, frame_rate):
@@ -80,7 +82,8 @@ def read_wave(file):
 
 def normalize(data):
     high, low = abs(max(data)), abs(min(data))
-    return data / max(high, low)
+    thing = data/max(high, low)
+    return thing
 
 
 def convolution_reverb(audio_file, ir_file, output_file):
@@ -104,4 +107,7 @@ def convolution_reverb(audio_file, ir_file, output_file):
     wave.write(output_file)
 
 
-convolution_reverb('apple_iphone_6.wav', 'IRs/bcB22.WAV', 'result.wav')
+convolution_reverb('apple_iphone_6.wav', 'IRs/bcB17.WAV', 'bcB17-result.wav')
+convolution_reverb('apple_iphone_6.wav', 'IRs/bcB22.WAV', 'bcB22-result.wav')
+
+# IRs/bcB22.WAV
