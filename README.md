@@ -12,3 +12,4 @@ This project consists primarily of three python files:
 Using Grasshopper and Rhino, several two-dimensional line drawings and extruded versions of those drawings were generated. These inputs were fed into CATT Acoustics, which was then used to generate an impulse response to simulate what a certain sound would sound like in that environment.	
 
 
+![Sample image bcB17](/JPG/bcB17.jpg)
