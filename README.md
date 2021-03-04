@@ -11,5 +11,14 @@ This project consists primarily of three python files:
 ## Generating Training Set
 Using Grasshopper and Rhino, several two-dimensional line drawings and extruded versions of those drawings were generated. These inputs were fed into CATT Acoustics, which was then used to generate an impulse response to simulate what a certain sound would sound like in that environment.	
 
+## Model
+The machine learning model we implemented for this project was a convolutional neural network (CNN), with a series of layers, including convolutional, pooling, drop out, and dense layers.
 
+## User side experience
+We were not able to combine the functional python code with the front end the way we wanted given the time constraint, but this link leads to the code used to construct the front end we used for our proof of concept.
+
+[Link to UI website](https://github.com/Krchow/doodleroom)
+
+
+## Sample image from our collection
 ![Sample image bcB17](/JPG/bcB17.jpg)
